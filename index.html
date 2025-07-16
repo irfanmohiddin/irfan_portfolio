@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irfan's Portfolio</title>
+</head>
+<body>
+  <section class="welcome-section">
+    <h1>Welcome to My<br><span> Portfolio Website</span><br>
+    <button onclick="location.href='portfolio.html'">Go to Portfolio</button>
+    </h1>
+  </section>
+  <style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #492b2b;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/portfolio back image.jpg');
+  background-size: 100%;
+  background-position: center;
+  animation: zoomBg 15s infinite alternate;
+  z-index: -1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoomBg {
+  0% { background-size: 100%; }
+  100% { background-size: 150%; }
+
+}
+.welcome-section {
+  animation: fadeIn 2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container and card */
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #535e61;
+}
+button {  
+  display: block;
+  margin: 20px auto 0 auto;
+  text-decoration: none;
+  padding: 12px 30px;
+  background: #00c9ff;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: #515557;
+}
+
+
+  </style>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irfan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Shaik Irfan Mohiddin</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <section id="home">
+    <header>
+      <div class="header-content">
+        <div class="text-section">
+          <h1 >Hi, I'm Irfan Mohiddin</h1>
+          <p>Aspiring <b>Full Stack Web Developer</b> passionate about building interactive digital experiences and exploring technology.</p>
+          <button onclick="scrollToSection('projects')">See My Work ↓</button>
+        </div>
+        <div class="image-section">
+          <img src="images/6287146623544969475.jpg" alt="My Photo" />
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="card" onclick="showDetails('project1')">
+        <h3>Portfolio Website</h3>
+        <p>A modern personal website to showcase my skills.</p>
+      </div>
+    </div>
+    <div id="projectDetails"></div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li class="skill-item"><img src="images/vscode-icons--file-type-html.svg" alt="HTML5 Logo" />HTML5</li>
+      <li class="skill-item"><img src="images/vscode-icons--file-type-css2.svg" alt="CSS3 Logo" />CSS3</li>
+      <li class="skill-item"><img src="images/material-icon-theme--javascript.svg" alt="JavaScript Logo" />JavaScript</li>
+      <li class="skill-item"><img src="images/c.svg" alt="Git, Agile Methodologies Logo" />C</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact </h2>
+    <form action="https://script.google.com/macros/s/AKfycbwrMz2IO2heJ-oyRmdT5QpzpNUSVXfZ9uOoeKJC_oehwPAcaL7q8Uh2NsrbFiNzaozxPQ/exec" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+    <p id="formMessage"></p>
+    <div class="social-linkyourprofiles">
+      <a href="https://www.instagram.com/sim_268__/" target="_blank"><img src="images/instagram.svg" alt="Instagram" /></a>
+      <a href="https://www.linkedin.com/in/shaik-irfan-mohiddin-537589323/" target="_blank"><img src="images/bi--linkedin.svg" alt="LinkedIn" /></a>
+       <a href="https://mail.google.com/mail/?view=cm&to=irfanloyola2019@gmail.com" target="_blank">
+         <img src="Portfolio/images/gmail.svg" alt="Email me" width="100" height="100">
+       </a>
+        <style>
+        .social-linkyourprofiles img {
+          width: 30px;
+          height: 30px;
+          margin: 0 10px;
+          transition: transform 0.3s;
+        }
+
+        .social-linkyourprofiles img:hover {
+          transform: scale(1.1);
+        }
+        .social-linkyourprofiles {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        </style>
+    </div>
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <style>
+        .nav {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          padding-top: 50px;
+          margin: 0;
+        }
+        .nav a {
+          font-size: 1.3rem;
+          margin: 0 25px;
+          color: #492b2b;
+          text-decoration: none;
+          font-weight: bold;
+          transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+        }
+        .nav a:hover {
+          color: #6c7577;
+          text-decoration: dotted;
+        }
+      </style>
+    </ul>
+  </section>
+    <!-- Footer -->
+  <footer>
+    <p>© 2025 Irfan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
